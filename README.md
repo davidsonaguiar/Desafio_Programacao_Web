@@ -17,6 +17,6 @@ GET /desafio/?domain=example7.com
 A resposta esperada será algo como:
 
 ```
-"<h1>192.168.1.7</h1>"
+"192.168.1.7"
 ```
 [Acesse a solução do Desafio 1](Desafio.java)
