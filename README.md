@@ -1,9 +1,9 @@
-# Respostas dos Desafios da Aula de Programação Web [![Desafio](https://img.shields.io/badge/Desafio-%F0%9F%94%A5-blueviolet.svg)](https://github.com/seu-usuario/seu-repositorio)
+# Respostas dos Desafios da Aula de Programação Web 🏆
 
 
 Bem-vindo(a) ao Repositório de Respostas dos Desafios da Aula de Programação Web! Neste repositório, você encontrará as soluções para os desafios propostos durante a disciplina de programação web. Cada desafio aborda tópicos específicos e oferece a oportunidade de praticar e aprimorar suas habilidades em desenvolvimento web.
 
-## Desafio 1: Resolvendo Domínios em IP usando o DNSServlet
+## Desafio 1: Resolvendo Domínios em IP usando o DNSServlet 🎯
 
 O primeiro desafio consiste em implementar um método que recebe uma requisição via GET, contendo o domínio, e retorne o IP correspondente. Para essa tarefa, usaremos o DNSServlet, uma ferramenta que nos permite resolver domínios em endereços IP.
 
@@ -20,4 +20,4 @@ A resposta esperada será algo como:
 ```
 "192.168.1.7"
 ```
-[Acesse a solução do Desafio 1](Desafio.java)
+[Acesse a solução do Desafio 1](Desafio.java) 🚀
