@@ -40,7 +40,7 @@ Suponha que o método foi implementado corretamente e está em execução. Se vo
 ```
 GET http://localhost:8080/pweb01/desafio2/
 
-HEADER
+HEADER REQUISICÃO
 Path: http://localhost:8080/pweb01/desafio2/
 Content-type: text/html
 AcceptEncoding: gzip, deflate, br
@@ -55,7 +55,7 @@ Content-type: text/html
 AcceptEncoding: gzip, deflate, br
 Scheme: http
 
-HEADER
+HEADER RESPOSTA
 cache-control: max-age=1000
 content-encoding: gzip
 content-type: text/html; charset=UTF-8
