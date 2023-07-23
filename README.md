@@ -1,4 +1,5 @@
-# Repositório de Respostas dos Desafios da Aula de Programação Web
+# Repositório de Respostas dos Desafios da Aula de Programação Web [![Desafio](https://img.shields.io/badge/Desafio-%F0%9F%94%A5-blueviolet.svg)](https://github.com/seu-usuario/seu-repositorio)
+
 
 Bem-vindo(a) ao Repositório de Respostas dos Desafios da Aula de Programação Web! Neste repositório, você encontrará as soluções para os desafios propostos durante a disciplina de programação web. Cada desafio aborda tópicos específicos e oferece a oportunidade de praticar e aprimorar suas habilidades em desenvolvimento web.
 
