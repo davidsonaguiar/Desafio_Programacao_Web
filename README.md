@@ -57,7 +57,7 @@ Scheme: http
 
 HEADER RESPOSTA
 cache-control: max-age=1000
-content-encoding: gzip
+content-encoding: gzip, text
 content-type: text/html; charset=UTF-8
 ```
-[Acesse a solução do Desafio 1](Desafio2.java) 
+[Acesse a solução do Desafio 2](Desafio2.java) 
