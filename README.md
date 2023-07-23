@@ -11,11 +11,11 @@ O primeiro desafio consiste em implementar um método que recebe uma requisiçã
 Suponha que o método foi implementado corretamente e está em execução. Se você fizer uma requisição GET para o seguinte endpoint:
 
 ```
-GET /resolver?dominio=google.com
+GET /desafio/?domain=example7.com
 ```
 
 A resposta esperada será algo como:
 
 ```
-"<h1>172.217.21.206</h1>"
+"<h1>192.168.1.7</h1>"
 ```
