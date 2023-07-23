@@ -20,4 +20,43 @@ A resposta esperada será algo como:
 ```
 "192.168.1.7"
 ```
-[Acesse a solução do Desafio 1](Desafio.java) 🚀
+[Acesse a solução do Desafio 1](Desafio.java) 
+
+
+## Desafio 2: Exibir Informações dos Cabeçalhos 🎯
+
+Neste desafio, usamos o DNSServlet para pegar informações dos cabeçalhos `Content-Type`, `accept-encoding`, `path` e `scheme` de uma solicitação e exibir na saída padrão.
+
+Além disso, também adicionamos as seguintes informações aos cabeçalhos de resposta:
+
+- Cache-Control: max-age=1000
+- Content-Encoding: gzip
+- Content-Type: text/html; charset=UTF-8
+
+### Exemplo de Uso
+
+Suponha que o método foi implementado corretamente e está em execução. Se você fizer uma requisição GET para o seguinte endpoint:
+
+```
+GET http://localhost:8080/pweb01/desafio2/
+
+HEADER
+Path: http://localhost:8080/pweb01/desafio2/
+Content-type: text/html
+AcceptEncoding: gzip, deflate, br
+Scheme: http
+```
+
+A resposta esperada será algo como:
+
+```
+Path: http://localhost:8080/pweb01/desafio2/
+Content-type: text/html
+AcceptEncoding: gzip, deflate, br
+Scheme: http
+
+HEADER
+cache-control: max-age=1000
+content-encoding: gzip
+content-type: text/html; charset=UTF-8
+```
