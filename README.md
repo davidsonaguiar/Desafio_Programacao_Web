@@ -1,6 +1,5 @@
 # Respostas dos Desafios da Aula de Programação Web 🏆
 
-
 Bem-vindo(a) ao Repositório de Respostas dos Desafios da Aula de Programação Web! Neste repositório, você encontrará as soluções para os desafios propostos durante a disciplina de programação web. Cada desafio aborda tópicos específicos e oferece a oportunidade de praticar e aprimorar suas habilidades em desenvolvimento web.
 
 ## Desafio 1: Resolvendo Domínios em IP usando o DNSServlet 🎯
@@ -61,3 +60,70 @@ content-encoding: gzip, text
 content-type: text/html; charset=UTF-8
 ```
 [Acesse a solução do Desafio 2](Desafio2.java) 
+
+## Desafio 3: Gerenciamento de Sessão com Servlets 🎯
+
+Neste desafio, você deve criar um novo Servlet capaz de receber requisições do tipo POST e DELETE.
+
+### Método POST
+
+No método POST, o Servlet deve verificar se o cliente possui uma sessão válida. Se não houver uma sessão válida para o cliente, o Servlet deve responder com a mensagem "Olá, este é seu primeiro acesso.". Caso já exista uma sessão para o cliente, o Servlet deve responder com a mensagem "Olá, você já esteve por aqui".
+
+### Método DELETE
+
+No método DELETE, o Servlet deve verificar o último acesso do cliente. Se o último acesso do cliente tiver ocorrido há mais de 30 segundos, o Servlet deve invalidar a sessão. Caso contrário, não é necessário fazer nenhuma ação.
+
+### Exemplo de Uso
+
+Suponha que o Servlet foi implementado corretamente e está em execução. 
+
+1. Requisição POST sem sessão:
+
+```
+POST http://localhost:8080/pweb01/desafio3/
+```
+
+Resposta esperada:
+
+```
+"Olá, este é seu primeiro acesso."
+```
+
+2. Requisição POST com sessão válida:
+
+```
+POST http://localhost:8080/pweb01/desafio3/
+```
+
+Resposta esperada:
+
+```
+"Olá, você já esteve por aqui"
+```
+
+3. Requisição DELETE com último acesso há mais de 30 segundos:
+
+```
+DELETE http://localhost:8080/pweb01/desafio3/
+```
+
+Resposta esperada:
+
+```
+Sessão inválida. Último acesso ocorreu há mais de 30 segundos.
+```
+
+4. Requisição DELETE com último acesso há menos de 30 segundos:
+
+```
+DELETE http://localhost:8080/pweb01/desafio3/
+```
+
+Resposta esperada:
+
+```
+Sessão válida. Último acesso ocorreu há menos de 30 segundos.
+```
+
+[Em progresso](Desafio3.java) 
+
