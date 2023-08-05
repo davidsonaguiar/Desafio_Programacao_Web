@@ -81,23 +81,18 @@ Suponha que o Servlet foi implementado corretamente e está em execução.
 
 ```
 POST http://localhost:8080/pweb01/desafio3/
-```
 
 Resposta esperada:
 
-```
 "Olá, este é seu primeiro acesso."
 ```
 
 2. Requisição POST com sessão válida:
 
-```
 POST http://localhost:8080/pweb01/desafio3/
-```
 
 Resposta esperada:
 
-```
 "Olá, você já esteve por aqui"
 ```
 
@@ -105,11 +100,9 @@ Resposta esperada:
 
 ```
 DELETE http://localhost:8080/pweb01/desafio3/
-```
 
 Resposta esperada:
 
-```
 Sessão inválida. Último acesso ocorreu há mais de 30 segundos.
 ```
 
@@ -117,13 +110,11 @@ Sessão inválida. Último acesso ocorreu há mais de 30 segundos.
 
 ```
 DELETE http://localhost:8080/pweb01/desafio3/
-```
 
 Resposta esperada:
 
-```
 Sessão válida. Último acesso ocorreu há menos de 30 segundos.
 ```
 
-[Em progresso](Desafio3.java) 
+[Acesse a solução do Desafio 2](Desafio3.java) 
 
