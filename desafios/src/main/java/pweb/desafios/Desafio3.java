@@ -1,4 +1,4 @@
-package br.edu.ifal.pweb01;
+package pweb.desafios;
 
 import java.io.IOException;
 import java.io.PrintWriter;

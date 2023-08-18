@@ -19,7 +19,7 @@ A resposta esperada será algo como:
 ```
 "192.168.1.7"
 ```
-[Acesse a solução do Desafio 1](Desafio.java) 
+[Acesse a solução do Desafio 1](./desafios/src/main/java/pweb/desafios/Desafio.java) 
 
 
 ## Desafio 2: Exibir Informações dos Cabeçalhos 🎯
@@ -37,10 +37,10 @@ Além disso, também adicionamos as seguintes informações aos cabeçalhos de r
 Suponha que o método foi implementado corretamente e está em execução. Se você fizer uma requisição GET para o seguinte endpoint:
 
 ```
-GET http://localhost:8080/pweb01/desafio2/
+GET http://localhost:8080/desafios/desafio2
 
 HEADER REQUISICÃO
-Path: http://localhost:8080/pweb01/desafio2/
+Path: http://localhost:8080/desafios/desafio2
 Content-type: text/html
 AcceptEncoding: gzip, deflate, br
 Scheme: http
@@ -49,7 +49,7 @@ Scheme: http
 A resposta esperada será algo como:
 
 ```
-Path: http://localhost:8080/pweb01/desafio2/
+Path: http://localhost:8080/desafios/desafio2
 Content-type: text/html
 AcceptEncoding: gzip, deflate, br
 Scheme: http
@@ -59,7 +59,7 @@ cache-control: max-age=1000
 content-encoding: gzip, text
 content-type: text/html; charset=UTF-8
 ```
-[Acesse a solução do Desafio 2](Desafio2.java) 
+[Acesse a solução do Desafio 2](./desafios/src/main/java/pweb/desafios/Desafio2.java) 
 
 ## Desafio 3: Gerenciamento de Sessão com Servlets 🎯
 
@@ -80,7 +80,7 @@ Suponha que o Servlet foi implementado corretamente e está em execução.
 1. Requisição POST sem sessão:
 
 ```
-POST http://localhost:8080/pweb01/desafio3/
+POST http://localhost:8080/desafios/desafio3
 
 Resposta esperada:
 
@@ -90,7 +90,7 @@ Resposta esperada:
 2. Requisição POST com sessão válida:
 
 ```
-POST http://localhost:8080/pweb01/desafio3/
+POST http://localhost:8080/desafios/desafio3
 
 Resposta esperada:
 
@@ -100,7 +100,7 @@ Resposta esperada:
 3. Requisição DELETE com último acesso há mais de 30 segundos:
 
 ```
-DELETE http://localhost:8080/pweb01/desafio3/
+DELETE http://localhost:8080/desafios/desafio3
 
 Resposta esperada:
 
@@ -110,12 +110,12 @@ Sessão inválida. Último acesso ocorreu há mais de 30 segundos.
 4. Requisição DELETE com último acesso há menos de 30 segundos:
 
 ```
-DELETE http://localhost:8080/pweb01/desafio3/
+DELETE http://localhost:8080/desafios/desafio3
 
 Resposta esperada:
 
 Sessão válida. Último acesso ocorreu há menos de 30 segundos.
 ```
 
-[Acesse a solução do Desafio 3](Desafio3.java) 
+[Acesse a solução do Desafio 3](./desafios/src/main/java/pweb/desafios/Desafio3.java) 
 

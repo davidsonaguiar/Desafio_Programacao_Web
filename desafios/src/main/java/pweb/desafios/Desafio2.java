@@ -1,4 +1,4 @@
-package br.edu.ifal.pweb01;
+package pweb.desafios;
 
 import java.io.IOException;
 
@@ -29,7 +29,7 @@ public class Desafio2 extends HttpServlet {
     response.setHeader("Content-Encoding", "gzip, text/plain");
     response.setContentType("application/text/html; charset=UTF-8");
     
-    response.getWriter().println(
+    response.getWriter().write(
       "Requisicao: " + 
       "\nPath: " + pathReq + 
       "\nContent-type: " + contentTypeReq + 
@@ -37,7 +37,6 @@ public class Desafio2 extends HttpServlet {
       "\nScheme: " + schemeReq 
     );
 
-    response.getWriter().close();
   }
 
 }
