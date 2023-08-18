@@ -37,7 +37,7 @@ Além disso, também adicionamos as seguintes informações aos cabeçalhos de r
 Suponha que o método foi implementado corretamente e está em execução. Se você fizer uma requisição GET para o seguinte endpoint:
 
 ```
-GET http://localhost:8080/desafios/desafio2
+GET http://localhost:8080/desafios/desafio
 
 HEADER REQUISICÃO
 Path: http://localhost:8080/desafios/desafio2
@@ -119,3 +119,8 @@ Sessão válida. Último acesso ocorreu há menos de 30 segundos.
 
 [Acesse a solução do Desafio 3](./desafios/src/main/java/pweb/desafios/Desafio3.java) 
 
+
+## Desafio 4: Formulário com Spring Boot e Validação 🎯
+Neste desafio, você irá criar um formulário web utilizando o framework Spring Boot. O objetivo é receber dados do usuário por meio do formulário, validar esses dados e exibir mensagens de erro quando necessário.
+
+[Acesse a solução do Desafio 4](./spring%20form/) 
