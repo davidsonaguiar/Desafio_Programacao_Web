@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  background-color: #F5F5F5;
+  font: 16px sans-serif;
+  color: #333;
+}
+
+h1 {
+  padding-top: 2rem;
+  color: rgb(30, 123, 231);
+}
+
+h3 {
+  color: #555555;
+  margin-bottom: 1rem;
+}
+
+h1, h3 {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 3.5rem;
+}
+
+form {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+fieldset {
+  padding: 2rem;
+  margin-bottom: 1rem;
+
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0 7px 10px -3px rgba(0, 0, 0, 0.2);
+}
+
+fieldset:focus-within {
+  border-color: rgb(30, 123, 231);
+}
+
+legend {
+  padding: 0 0.5rem;
+
+  color: rgb(30, 123, 231);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+fieldset > div {
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+fieldset > div > div{
+  max-width: calc(50% - 1rem);
+
+  display: flex;
+  flex-grow: 1;
+  gap: 0.5rem;
+}
+
+label:not(:has(input[type="checkbox"], input[type="radio"])) {
+  color: #555555;
+
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label:has(#ddd, #ramal) {
+  max-width: 60px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+label:has(input[type="checkbox"], input[type="radio"]) {
+  align-items: center;
+  gap: 1rem;
+}
+
+input:not(input[type="checkbox"], input[type="radio"]),
+select {
+  width: 100%;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: rgb(239, 73, 17);
+}
+
+input:focus, select:focus {
+  outline-color: rgb(30, 123, 231);
+}
+
+div:has(button) {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+button {
+  padding:  0.7rem 2rem;
+
+  border: none;
+  
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 300;
+  
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: rgb(30, 123, 231);
+}
+
+button[type="reset"] {
+  background-color: rgb(231, 87, 30);
+}
+
+@media (max-width: 620px) {
+  fieldset > div,
+  fieldset > div > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  fieldset > div {
+    flex-direction: column;
+  }
+
+  label:not(:has(input[type="checkbox"], input[type="radio"])) {
+    width: 100%;
+  }
+  
+}

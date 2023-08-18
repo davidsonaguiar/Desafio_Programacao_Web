@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+  <h1>Escola Virtual</h1>
+  <h3>Formulário de Pré-matrícula</h3>
+  <form action="#" th:action="@{/}" th:object="${dataForm}" method="post">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <div>
+        <label for="nome">
+          <span>Nome</span>
+          <input type="text" th:field="*{nome}" id="nome" placeholder="Ex. Joao dos Santos">
+          <span 
+            class="error"
+            th:if="${#fields.hasErrors('nome')}" 
+            th:errors="*{nome}">
+          </span>
+        </label>
+    
+        <label for="date">
+          <span>Data de Nascimento</span>
+          <input type="date" th:field="*{data_nascimento}" id="date">
+          <span 
+            class="error"
+            th:if="${#fields.hasErrors('data_nascimento')}" 
+            th:errors="*{data_nascimento}">
+          </span>
+        </label>
+      </div>
+  
+      <div>
+        <label for="nome_mae">
+          <span>Nome da Mãe</span>
+          <input type="text" id="nome_mae" th:field="*{nome_mae}" placeholder="Ex. Lurdes dos Santos">
+          <span 
+            class="error"
+            th:if="${#fields.hasErrors('nome_mae')}" 
+            th:errors="*{nome_mae}">
+          </span>
+        </label>
+    
+        <label for="nome_pai">
+          <span>Nome da Pai</span>
+          <input type="text" id="nome_pai" th:field="*{nome_pai}" placeholder="Ex. Jose dos Santos">
+          <span 
+            class="error"
+            th:if="${#fields.hasErrors('nome_pai')}" 
+            th:errors="*{nome_pai}">
+          </span>
+        </label>
+      </div>
+  
+      <div>
+        <div>
+          <label for="ddd">
+            <span>DDD</span>
+            <input type="tel" id="ddd" th:field="*{ddd}" placeholder="Ex. 82">
+            <span 
+              class="error"
+              th:if="${#fields.hasErrors('ddd')}" 
+              th:errors="*{ddd}">
+            </span>
+          </label>
+      
+          <label for="numero">
+            <span>Numero</span>
+            <input type="tel" id="numero" th:field="*{numero}" placeholder="Ex. 88523090">
+            <span 
+              class="error"
+              th:if="${#fields.hasErrors('numero')}" 
+              th:errors="*{numero}">
+            </span>
+          </label>
+      
+          <label for="ramal">
+            <span>Ramal</span>
+            <input type="tel" id="ramal" th:field="*{ramal}" placeholder="Ex. 10">
+            <span 
+              class="error"
+              th:if="${#fields.hasErrors('ramal')}" 
+              th:errors="*{ramal}">
+            </span>
+          </label>
+        </div>
+        <label for="email">
+          <span>E-mail</span>
+          <input type="email" id="email" th:field="*{email}" placeholder="Ex. jds@exemplo.com">
+          <span 
+            class="error"
+            th:if="${#fields.hasErrors('email')}" 
+            th:errors="*{email}">
+          </span>
+        </label>
+      </div>
+  
+    </fieldset>
+
+    <fieldset>
+      <legend>Dados da Matrícula</legend>
+      <div>
+        <label for="serie">
+          <span>Série</span>
+          <select name="" id="serie" th:field="*{serie}">
+            <option value="" selected>Selecione uma opção</option>
+            <option value="pre escola">Pré-Escola</option>
+            <option value="ensino infantil">Ensino Infantil</option>
+            <option value="ensino fundamental">Ensino Fundamental</option>
+            <option value="ensino medio">Ensino Médio</option>
+          </select>
+          <span 
+            class="error"
+            th:if="${#fields.hasErrors('serie')}" 
+            th:errors="*{serie}">
+          </span>
+        </label>
+  
+        <div class="column">
+          <span>Turno</span>
+          <div>
+            <label for="manha">
+              <input type="radio" name="turno" th:field="*{turno}" id="manha" value="manha">
+              <span>Manhã</span>
+            </label>
+            <label for="tarde">
+              <input type="radio" name="turno" th:field="*{turno}" id="manha" value="tarde">
+              <span>Tarde</span>
+            </label>
+            <span
+              class="error"
+              th:if="${#fields.hasErrors('turno')}"
+              th:errors="*{turno}">
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <span>Atividades Extracurriculares</span>
+        <div class="column">
+          <label for="informatica">
+            <input type="checkbox" name="atividades" th:field="*{atividades}" value="informatica" id="informatica">
+            <span>Informática</span>
+          </label>
+          <label for="musica">
+            <input type="checkbox" name="atividades" th:field="*{atividades}" value="musica" id="musica">
+            <span>Música</span>
+          </label>
+          <label for="ballet">
+            <input type="checkbox" name="atividades" th:field="*{atividades}" value="ballet" id="ballet">
+            <span>Ballet</span>
+          </label>
+          <label for="pintura">
+            <input type="checkbox" name="atividades" th:field="*{atividades}" value="pintura" id="pintura">
+            <span>Pintura</span>
+          </label>
+          <label for="pintura">
+            <input type="checkbox" name="atividades" th:field="*{atividades}" value="pintura" id="pintura">
+            <span>Pintura</span>
+          </label>
+          <label for="judo">
+            <input type="checkbox" name="atividades" th:field="*{atividades}" value="judo" id="judo">
+            <span>Judô</span>
+          </label>
+          <label for="futebol">
+            <input type="checkbox" name="atividades" th:field="*{atividades}" value="futebol" id="futebol">
+            <span>Futebol</span>
+          </label>
+        </div>
+        <span
+          class="error"
+          th:if="${#fields.hasErrors('atividades')}"
+          th:errors="*{atividades}">
+        </span>
+      </div>
+    </fieldset>
+    <div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </div>
+  </form>
+</body>
+</html>

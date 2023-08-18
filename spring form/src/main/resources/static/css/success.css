@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
+a {
+  width: max-content;
+  padding: 1rem 2rem;
+  margin: 2rem;
+
+  background-color: rgb(30, 123, 231);
+  border: none;
+  border-radius: 3px;
+  
+  color: #FFF;
+  text-decoration: none;
+  
+  display: block;
+}
+
+h1 {
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: rgb(30, 123, 231);
+  font: 3rem sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
