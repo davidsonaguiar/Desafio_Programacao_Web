@@ -55,7 +55,7 @@ Resposta esperada (página de confirmação):
 
 - [Model](./src/main/java/pweb2/form/Models/User.java) 
 - [Controller](./src/main/java/pweb2/form/Controllers/UserController.java)
-- [Repository](./src/main/java/pweb2/form/Repositories/UserRepository.java)
+- [Repository](./src/main/java/pweb2/form/Respositories/UserRepository.java)
 - [Formulario HTML](./src/main/resources/templates/form.html)
 - [Formulario CSS](./src/main/resources/static/css/form.css)
 - [Success html](./src/main/resources/templates/success.html)
