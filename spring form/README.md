@@ -19,6 +19,11 @@ Neste desafio, você irá criar um formulário web utilizando o framework Spring
 - O campo de email deve conter o caractere "@".
 - O DDD deve ser um valor válido.
 
+### Persistência
+
+- Ao enviar o formulário os dados devem persister
+- Implemente uma pagina para recuperação dos dados salvos
+
 ### Exemplo de Uso
 
 Suponha que você tenha concluído o desafio corretamente e o aplicativo esteja em execução.
