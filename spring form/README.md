@@ -53,8 +53,9 @@ Resposta esperada (página de confirmação):
 
 ## Links
 
-- [Model](./src/main/java/pweb2/form/DataForm.java) 
-- [Controller](./src/main/java/pweb2/form/Form.java)
+- [Model](./src/main/java/pweb2/form/Models/User.java) 
+- [Controller](./src/main/java/pweb2/form/Cotroller/UserController.java)
+- [Repository](./src/main/java/pweb2/form/Repositories/UserRepository.java)
 - [Formulario HTML](./src/main/resources/templates/form.html)
 - [Formulario CSS](./src/main/resources/static/css/form.css)
 - [Success html](./src/main/resources/templates/success.html)
