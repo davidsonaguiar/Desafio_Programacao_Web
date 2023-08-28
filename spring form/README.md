@@ -22,6 +22,7 @@ Neste desafio, você irá criar um formulário web utilizando o framework Spring
 ### Persistência
 
 - Ao enviar o formulário os dados devem persister
+- A persistência deve ocorrer em um banco de dados relacional
 - Implemente uma pagina para recuperação dos dados salvos
 
 ### Exemplo de Uso
