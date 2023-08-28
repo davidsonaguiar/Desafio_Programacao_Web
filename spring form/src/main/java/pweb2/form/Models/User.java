@@ -1,5 +1,10 @@
-package pweb2.form;
+package pweb2.form.Models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
@@ -13,7 +18,16 @@ import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-public class DataForm {
+@Entity
+@Table(name = "TBL_USERS")
+public class User {
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Long id;
+
+  public Long getId() {
+    return id;
+  }
 
   @NotNull
   @Size(min = 2, max = 255)
@@ -66,6 +80,7 @@ public class DataForm {
 
   @NotNull
   @Pattern(regexp = "^(1[1-9]|2[1-9]|3[0-9]|4[1-9]|5[1-5]|6[1-9]|7[1-9]|8[1-9]|9[1-9])$", message = "DDD Inválido")
+  @Size(max = 2, min = 2)
   private String ddd;
 
   public String getDdd() {

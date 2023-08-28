@@ -7,9 +7,17 @@
   <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Formulário</a></li>
+        <li><a href="/users">Usuários</a></li>
+      </ul>
+    </nav>
+  </header>
   <h1>Escola Virtual</h1>
   <h3>Formulário de Pré-matrícula</h3>
-  <form action="#" th:action="@{/}" th:object="${dataForm}" method="post">
+  <form action="#" th:action="@{/}" th:object="${user}" method="post">
     <fieldset>
       <legend>Dados Pessoais</legend>
       <div>
